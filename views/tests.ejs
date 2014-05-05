@@ -14,7 +14,7 @@
                 var form = document.forms.form1;
                 var json_data = {
                     // hard coded
-                    test_id: '10',
+                    test_id: document.body.getAttribute('data-testid'),
                     test_desc: form.input1.value
                 };
 
@@ -30,6 +30,7 @@
                         } else {
                             var obj = JSON.parse(xhr.responseText);
                             console.log(obj);
+                            alert('Check your console!');
                             form.style.display = 'none';
                         }
                     }

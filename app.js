@@ -58,7 +58,11 @@ app.get('/test.json/:id', function(req, res){
 
 app.post('/tests/test_submitted/:num', function(req, res){
     console.log(req.body);
-    res.render('test_submitted', { id: req.body.test_id , description: req.body.test_desc});
+    res.json(200, {
+        id: req.body.test_id ,
+        option_user_picked: req.body.test_desc,
+        correct_answer: 'jkl;'
+    });
 });
 
 app.post('/signup', function(req, res){
