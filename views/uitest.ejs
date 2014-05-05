@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>UI Test</title>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" src="public/stylesheets/style.css"/>
+
+    <style type="text/css">
+        body {
+            background-color: #0d2f41;
+            color: #eee;
+            position: relative;
+        }
+
+        a {
+            display: inline-block;
+            text-align: center;
+            padding: 1px;
+        }
+
+        #header {
+            border: 1px solid gray;
+        }
+
+        #home {
+            float: left;
+            display: inline-block;
+            padding: 6px;
+            border: 1px solid gray;
+        }
+
+        #take, #upload, #login {
+            float: right;
+            display: inline-block;
+            border-left: 1px solid gray;
+            padding: 6px;
+            border: 1px solid gray;
+        }
+
+        #list{
+            float: right;
+            display: inline-block;
+            border-left: 1px solid gray;
+            padding: 6px;
+            border: 1px solid gray;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #f5f5f5;
+            font-size: 50px;
+            position: relative;
+
+        }
+
+        #main{
+            border-top: 1px solid gray;
+            padding-top: 7em;
+            text-align: center;
+        }
+
+        #footer{
+            padding-top: 7em;
+            text-align: center;
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="header">
+        <div><a id="home" href="/uitest/">Home</a></div>
+        <div><a id="list" href="/tests/lists/">List Tests</a></div>
+        <div><a id="take" href="/tests/test/:num/">Take Test</a></div>
+        <div><a id="upload" href="/tests/upload/">Upload Test</a></div>
+        <div><a id="login" href="/signup/">Signup/Login</a></div>
+    </div>
+<div id="main">
+    <h1 id="main_heading">UI Training</h1>
+    <span><h3 id="caption"/><a href="/tests/lists/">List Tests</a></h3>
+         <p>List tests for students to take. Easy access to hundreds of tests.</p>
+    </span>
+    <span><h3 id="caption"/><a href="/tests/test/:num/">Take Tests</a></h3>
+         <p>Take hundreds of standardized tests to make you well equipped for the next interview.</p>
+    </span>
+    <span><h3 id="caption"/><a href="/tests/upload/">Upload Test</a></h3>
+         <p>If you are a test junkie wanting to test your test making skills to the max, look no further.</p>
+    </span>
+</div>
+
+<footer id="footer">
+        <div class="copyright">&copy; Go Live Labs.  All rights reserved. 2014.</div>
+</footer>
+
+</body>
+</html>
